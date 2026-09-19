@@ -20,14 +20,20 @@ a { color: inherit; text-decoration: none; }
 .text-link { color: var(--blue); text-decoration: underline; text-underline-offset: 3px; }
 
 .site-header {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 1.1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0.95rem max(1.5rem, calc(50vw - 560px));
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   border-bottom: 1px solid var(--line);
+  background: rgba(20, 20, 20, 0.94);
+  backdrop-filter: saturate(1.2) blur(12px);
 }
 
 .brand { display: flex; align-items: center; }
