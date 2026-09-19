@@ -4,26 +4,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Journal — Des Dreckett</title>
-  <meta name="description" content="Notes from Des Dreckett, published over time.">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="/">
-      <span class="avatar" aria-hidden="true">DD</span>
-    </a>
+    <a class="brand" href="/"><span class="avatar" aria-hidden="true">DD</span></a>
     <nav class="pill-nav">
       <a href="/about.html">About</a>
       <a href="https://www.theauthorityengine.org/">Work</a>
-      <a href="https://www.youtube.com/@DesmondDreckett">Resources</a>
+      <div class="drop">
+        <button type="button" class="drop-btn" aria-expanded="false">Resources</button>
+        <div class="drop-menu">
+          <a href="https://www.youtube.com/@DesmondDreckett">YouTube — Des Dreckett</a>
+          <a href="https://uk.linkedin.com/in/desmonddreckett">LinkedIn — Des Dreckett</a>
+        </div>
+      </div>
     </nav>
     <a class="btn-nav" href="https://calendar.app.google/1hYww8VK5qaB5DGH6">Book a call</a>
   </header>
-
   <main class="wrap page" data-journal>
     <p class="section-label">Journal</p>
     <h1>Notes over time.</h1>
-    <div class="journal-filters" role="tablist" aria-label="Journal categories">
+    <div class="journal-filters" role="tablist">
       <button type="button" class="chip is-on" data-filter="all">All notes</button>
       <button type="button" class="chip" data-filter="found">Getting found</button>
       <button type="button" class="chip" data-filter="weekly">One video a week</button>
@@ -33,7 +35,6 @@
     <div class="journal-list"></div>
     <p class="empty" data-empty>Nothing in this category yet. The tabs still work. Notes will land here one at a time.</p>
   </main>
-
   <footer class="footer-grid">
     <div>
       <span class="avatar" aria-hidden="true">DD</span>
@@ -44,6 +45,7 @@
       <a href="/about.html">About</a>
       <a href="https://www.theauthorityengine.org/">The Authority Engine</a>
       <a href="https://www.youtube.com/@DesmondDreckett">YouTube</a>
+      <a href="https://uk.linkedin.com/in/desmonddreckett">LinkedIn</a>
     </div>
     <div>
       <h3>Legal</h3>
@@ -55,5 +57,6 @@
   </footer>
   <script src="/journal.js"></script>
   <script src="/cookies.js"></script>
+  <script src="/nav.js"></script>
 </body>
 </html>
