@@ -107,6 +107,33 @@ a { color: inherit; text-decoration: none; }
 .btn { border: 1px solid #3a3a3a; color: #fff; }
 .btn-light { background: #fff; color: #111; }
 
+.btn,
+.btn-light,
+.btn-nav {
+  display: inline-block;
+}
+.btn:hover,
+.btn-light:hover,
+.btn-nav:hover {
+  animation: btn-shake 0.45s ease;
+}
+
+@keyframes btn-shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-3px) rotate(-0.4deg); }
+  40% { transform: translateX(3px) rotate(0.4deg); }
+  60% { transform: translateX(-2px) rotate(-0.25deg); }
+  80% { transform: translateX(2px) rotate(0.25deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn:hover,
+  .btn-light:hover,
+  .btn-nav:hover {
+    animation: none;
+  }
+}
+
 .wrap { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem 4rem; }
 .page { max-width: 52rem; padding-top: 3.2rem; }
 .page h1 {
