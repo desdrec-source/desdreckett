@@ -3,9 +3,13 @@
     var btn = drop.querySelector(".drop-btn");
     if (!btn) return;
     btn.addEventListener("click", function (e) {
+      e.preventDefault();
       e.stopPropagation();
       var open = drop.classList.toggle("is-open");
       btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    drop.addEventListener("click", function (e) {
+      e.stopPropagation();
     });
   });
   document.addEventListener("click", function () {
