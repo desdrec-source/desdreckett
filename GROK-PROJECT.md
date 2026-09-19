@@ -7,7 +7,12 @@ Name the project: desdreckett-com
 Personal website for Des Dreckett at desdreckett.com.
 GitHub: https://github.com/desdrec-source/desdreckett
 Vercel project: desdreckett
-Registrar: Namecheap. Domain is not pointed at Vercel yet.
+Team: desdrec-2892s-projects
+Registrar: Namecheap.
+
+Vercel already has desdreckett.com and www verified. www 308s to the apex.
+DNS is not pointed at Vercel yet, so the public domain still shows the old generic page.
+Preview URLs are SSO-protected. Custom domain will be public once DNS cuts over.
 
 This is not The Authority Engine project. TAE stays at https://www.theauthorityengine.org/
 
@@ -37,9 +42,9 @@ Hyphens, not em dashes. No guru tone. No invented prices, results, or client sto
 
 GitHub + Vercel. Static HTML first. Do not put this site on Base44 or Hostinger WordPress.
 
-## First jobs in the new Grok project
+## Jobs
 
 1. Finish the personal one-liner with Des.
-2. Add About.
+2. About is live at /about.html. Keep it short. No invented biography.
 3. Point Namecheap DNS at Vercel when the preview looks right.
 4. Then add journal posts one at a time.
