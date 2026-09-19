@@ -157,17 +157,19 @@ a { color: inherit; text-decoration: none; }
 
 .product-grid { display: grid; max-width: 520px; }
 .product-art {
-  background: linear-gradient(160deg, #0d1f1b, #1f4d3a);
+  background: #1b2a4a;
   border-radius: 16px;
   min-height: 220px;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  border: 1px solid #2a3d36;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #24324f;
 }
-.product-art span { opacity: 0.8; font-size: 0.9rem; }
-.product-art strong { font-size: 1.55rem; margin-top: 0.2rem; }
+.product-art img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
 .product h2 { margin: 1rem 0 0.35rem; font-size: 1.3rem; }
 .product p, .empty { color: var(--muted); margin: 1rem 0 0; }
 
