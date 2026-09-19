@@ -44,12 +44,17 @@
       </div>
     </section>
 
-    <section class="wrap journal">
+    <section class="wrap journal" data-journal>
       <p class="section-label">Journal</p>
-      <div class="journal-filters">
-        <span class="chip is-on">All notes</span>
+      <div class="journal-filters" role="tablist">
+        <button type="button" class="chip is-on" data-filter="all">All notes</button>
+        <button type="button" class="chip" data-filter="public">Building in public</button>
+        <button type="button" class="chip" data-filter="youtube">YouTube</button>
+        <button type="button" class="chip" data-filter="work">The work</button>
+        <button type="button" class="chip" data-filter="notes">Notes</button>
       </div>
-      <p class="empty">Nothing published yet. When a note is ready, it will sit here as a dated row.</p>
+      <div class="journal-list"></div>
+      <p class="empty" data-empty>Nothing published in this category yet.</p>
     </section>
   </main>
 
@@ -73,5 +78,6 @@
     </div>
     <p class="legal">&copy; 2026 Des Dreckett. XenMedia Marketing Limited.</p>
   </footer>
+  <script src="/journal.js"></script>
 </body>
 </html>
