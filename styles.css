@@ -241,6 +241,66 @@ a { color: inherit; text-decoration: none; }
 .chip:hover { color: #fff; }
 .chip.is-on { background: #fff; color: #111; }
 
+.journal-list { margin-top: 1.6rem; }
+.journal-item {
+  padding: 1.35rem 0 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+.journal-item:first-child { padding-top: 1.1rem; }
+.journal-meta {
+  margin: 0 0 0.45rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: #8b919c;
+}
+.journal-item h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.28rem;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+}
+.journal-item h2 a:hover { color: #fff; }
+.journal-item p { margin: 0; color: var(--muted); max-width: 38rem; }
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0 0 0.7rem;
+  color: #8b919c;
+  font-size: 0.9rem;
+}
+.article-meta a { color: #8b919c; }
+.article-meta a:hover { color: #fff; }
+.page .deck {
+  font-size: 1.12rem;
+  color: #b0b6c0;
+  margin: -0.4rem 0 1.8rem;
+  max-width: 38rem;
+}
+.page blockquote {
+  margin: 1.4rem 0;
+  padding: 0.15rem 0 0.15rem 1.1rem;
+  border-left: 3px solid var(--blue);
+}
+.page blockquote p {
+  margin: 0;
+  color: #e5e7eb;
+  font-size: 1.08rem;
+}
+.page ul, .page ol {
+  margin: 0.4rem 0 1.2rem;
+  padding-left: 1.2rem;
+  color: #c5c9d1;
+}
+.page li { margin: 0.55rem 0; }
+.page hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 2.4rem 0;
+}
+.article-nav { margin-top: 2.4rem; }
+
 .footer-grid {
   max-width: 1120px;
   margin: 0 auto;
